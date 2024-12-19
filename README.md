@@ -1,1 +1,1 @@
-# high-performance-computing-pi-approximation-monte-carlo
+# High-Performance-Computing (HPC) - Pi Approximation by Monte Carlo
