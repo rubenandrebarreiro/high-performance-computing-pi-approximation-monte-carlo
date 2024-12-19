@@ -51,14 +51,14 @@
 
 > * Numerical computing techniques that use random simulations to<br>solve mathematical problems that may be difficult or impossible to solve.
 
-### What is the Monte Carlo approximation of π?
+### What is the Monte Carlo approximation of <i>&#960;</i>?
 
 > * A technique that uses the generation of (pseudo or truly) random numbers to<br>estimate π, relating the area of ​​a circumference and a square.
 
-### How does the Monte Carlo approximation of &#960; work?
+### How does the Monte Carlo approximation of <i>&#960;</i> work?
 
 > ***1. Definition of Cartesian Space:***
->    * Considers a circumference with radius <i>r</i> and a square with side <i>2 &#215; r</i>.
+>    * Considers a circumference with radius <i>r</i> and a square with side <i>2</i> &#215; <i>r</i>.
 
 > ***2. Generation of (Pseudo or Truly) Random Points:***
 >    * Generation of <i>N<sub>total</sub></i> (pseudo or truly) random points (<i>x</i>,<i>y</i>) in the interval [-<i>r</i>,<i>r</i>].
