@@ -53,7 +53,7 @@
 
 ### What is the Monte Carlo approximation of <i>&#960;</i>?
 
-> * A technique that uses the generation of (pseudo or truly) random numbers to<br>estimate &#960;, relating the area of ​​a circumference and a square.
+> * A technique that uses the generation of (pseudo or truly) random numbers to<br>estimate <i>&#960;</i>, relating the area of ​​a circumference and a square.
 
 ### How does the Monte Carlo approximation of <i>&#960;</i> work?
 
