@@ -1,0 +1,60 @@
+{
+	"configurations" : 
+	[
+		{
+			"directories" : 
+			[
+				{
+					"build" : ".",
+					"jsonFile" : "directory-.-Debug-f5ebdc15457944623624.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.29"
+					},
+					"projectIndex" : 0,
+					"source" : ".",
+					"targetIndexes" : 
+					[
+						0
+					]
+				}
+			],
+			"name" : "Debug",
+			"projects" : 
+			[
+				{
+					"directoryIndexes" : 
+					[
+						0
+					],
+					"name" : "Pi_Approximation__High_Performance_Computing_",
+					"targetIndexes" : 
+					[
+						0
+					]
+				}
+			],
+			"targets" : 
+			[
+				{
+					"directoryIndex" : 0,
+					"id" : "Pi_Approximation__High_Performance_Computing_::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-Pi_Approximation__High_Performance_Computing_-Debug-4a2f7420a95ddac63bfe.json",
+					"name" : "Pi_Approximation__High_Performance_Computing_",
+					"projectIndex" : 0
+				}
+			]
+		}
+	],
+	"kind" : "codemodel",
+	"paths" : 
+	{
+		"build" : "/home/rubenandrebarreiro/CLionProjects/Pi Approximation (High-Performance Computing)/cmake-build-debug",
+		"source" : "/home/rubenandrebarreiro/CLionProjects/Pi Approximation (High-Performance Computing)"
+	},
+	"version" : 
+	{
+		"major" : 2,
+		"minor" : 7
+	}
+}

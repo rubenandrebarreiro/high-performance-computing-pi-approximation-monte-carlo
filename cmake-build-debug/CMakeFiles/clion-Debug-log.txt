@@ -1,0 +1,9 @@
+/home/rubenandrebarreiro/.local/share/JetBrains/Toolbox/apps/clion/bin/cmake/linux/x64/bin/cmake -DCMAKE_BUILD_TYPE=Debug -DCMAKE_MAKE_PROGRAM=/home/rubenandrebarreiro/.local/share/JetBrains/Toolbox/apps/clion/bin/ninja/linux/x64/ninja -G Ninja -S "/home/rubenandrebarreiro/CLionProjects/Pi Approximation (High-Performance Computing)" -B "/home/rubenandrebarreiro/CLionProjects/Pi Approximation (High-Performance Computing)/cmake-build-debug"
+CMake Error at /home/rubenandrebarreiro/.local/share/JetBrains/Toolbox/apps/clion/bin/cmake/linux/x64/share/cmake-3.29/Modules/Internal/CMakeCUDAArchitecturesValidate.cmake:7 (message):
+  CMAKE_CUDA_ARCHITECTURES must be non-empty if set.
+Call Stack (most recent call first):
+  /home/rubenandrebarreiro/.local/share/JetBrains/Toolbox/apps/clion/bin/cmake/linux/x64/share/cmake-3.29/Modules/CMakeDetermineCUDACompiler.cmake:112 (cmake_cuda_architectures_validate)
+  CMakeLists.txt:3 (enable_language)
+
+
+-- Configuring incomplete, errors occurred!

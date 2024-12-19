@@ -1,0 +1,3 @@
+/home/rubenandrebarreiro/CLionProjects/Pi Approximation (High-Performance Computing)/cmake-build-debug/CMakeFiles/Pi_Approximation__High_Performance_Computing_.dir
+/home/rubenandrebarreiro/CLionProjects/Pi Approximation (High-Performance Computing)/cmake-build-debug/CMakeFiles/edit_cache.dir
+/home/rubenandrebarreiro/CLionProjects/Pi Approximation (High-Performance Computing)/cmake-build-debug/CMakeFiles/rebuild_cache.dir
