@@ -1,4 +1,4 @@
-# High-Performance Computing (HPC):<br>&#8226; Pi Approximation by Monte Carlo
+# High-Performance Computing (HPC):<br>&nbsp;&#8226; Pi Approximation by Monte Carlo
 
 ![https://raw.githubusercontent.com/rubenandrebarreiro/high-performance-computing-pi-approximation-monte-carlo/master/imgs/JPGs/banner-1.jpg](https://raw.githubusercontent.com/rubenandrebarreiro/high-performance-computing-pi-approximation-monte-carlo/master/imgs/JPGs/banner-1.jpg)
 ###### High-Performance Computing (HPC): Pi Approximation by Monte Carlo - Banner #1
@@ -46,6 +46,101 @@
 > **IMPORTANT**
 >
 > ##### &nbsp;&nbsp;&#8226; This practical High-Performance Computing (HPC) demonstration was built for the practical laboratory classes of<br>&nbsp;&nbsp;&nbsp;&nbsp;the [Computer Systems Architectures](https://fenix.ciencias.ulisboa.pt/courses/asc-2254879305242433) (Fall Semester - 2024-2025 academic year), at [Ci&#234;ncias - ULisboa](https://ciencias.ulisboa.pt/) of [University of Lisbon](https://www.ulisboa.pt/),<br>&nbsp;&nbsp;&nbsp;&nbsp;between December 10, 2024, and December 20, 2024. ⚠️
+
+### What are Monte Carlo methods?
+
+> * Numerical computing techniques that use random simulations to<br>solve mathematical problems that may be difficult or impossible to solve.
+
+### What is the Monte Carlo approximation of π?
+
+> * A technique that uses the generation of (pseudo or truly) random numbers to<br>estimate π, relating the area of ​​a circumference and a square.
+
+### How does the Monte Carlo approximation of &#960; work?
+
+> ***1. Definition of Cartesian Space:***
+>    * Considers a circumference with radius <i>r</i> and a square with side <i>2 &#215; r</i>.
+
+> ***2. Generation of (Pseudo or Truly) Random Points:***
+>    * Generation of <i>N<sub>total</sub></i> (pseudo or truly) random points (<i>x</i>,<i>y</i>) in the interval [-<i>r</i>,<i>r</i>].
+
+> ***3. Counting the Points inside the Circumference:***
+>    * Counting the <i>N</i> points (<i>x,y</i>) that are inside the circumference, checking the condition <i>x</i><sup>2</sup> + <i>y</i><sup>2</sup> &le; <i>r</i>.
+
+> ***4. Calculation of the Approximation of &#960;:***
+>    * We know that the areas of the square and the circumference are given by:
+>      * <i>A<sub>square</sub></i> = (<i>2</i> &#215; <i>r</i>) × (<i>2</i> &#215; <i>r</i>) = (<i>2</i> &#215; <i>r</i>)<sup>2</sup> = 4 &#215; <i>r<sup>2</sup></i>
+>      * <i>A<sub>circumference</sub></i> = <i>&#960;</i> &#215; <i>r<sup>2</sup></i>
+>    * We can approximate the rate of the number of points inside the circumference given by<br>N<sub>circumference</sub>/N<sub>total</sub> to the value of <i>&#960;</i> / <i>4</i> as follows:
+>      * <i>N<sub>circumference</sub></i> / <i>N<sub>total</sub></i> < (<i>A<sub>circumference</sub></i> / <i>A<sub>square</sub></i>) = (&#960; &#215; <i>r<sup>2</sup></i>) / (<i>4</i> &#215; <i>r<sup>2</sup></i>) = <i>&#960;</i> / <i>4</i>
+>    * Therefore, we can calculate <i>&#960;</i> approximately as <i>&#960;</i> &asymp; <i>4</i> &#215; (<i>N<sub>circumference</sub></i> / <i>N<sub>total</sub></i>).
+
+### Sequential Programs vs. Parallel Programs
+
+> ***Sequential Programs:***
+> * Instructions executed in a specific order.
+> * Each instruction depends on the completion of the previous instruction.
+> * Performance depends on the speed of the CPU and the number of instructions.
+
+> ***Parallel Programs:***
+> * Instructions can be executed simultaneously and independently.
+> * Dividing tasks into several smaller subtasks per worker (thread).
+> * (Better) performance for tasks divided into independent subtasks.
+
+***
+
+## Instructions
+
+> ***Edit, compile, and run the sequential version (single CPU worker)***
+> * To compile the program, type the following command in the terminal:
+> ```
+> g++ -std=c++11 pi_approximation_sequential_cpu.cpp -o pi_approximation_sequential_cpu -lsfml-graphics -lsfml-window -lsfml-system
+> ```
+>
+> * To edit the program, type the following command in the terminal:
+> ```
+> gedit pi_approximation_sequential_cpu.cpp
+> ```
+>
+> * To run the program, type the following command in the terminal:
+> ```
+> ./pi_approximation_sequential_cpu
+> ```
+
+> ***Edit, compile, and run the parallel version (multiple CPU workers)***
+> * To compile the program, type the following command in the terminal:
+> ```
+> g++ -fopenmp -std=c++11 pi_approximation_parallel_cpu_openmp.cpp -o pi_approximation_parallel_cpu_openmp -lsfml-graphics -lsfml-window -lsfml-system
+> ```
+>
+> * To edit the program, type the following command in the terminal:
+> ```
+> gedit pi_approximation_parallel_cpu_openmp.cpp
+> ```
+> 
+> * To run the program, type the following command in the terminal:
+> ```
+> ./pi_approximation_parallel_cpu_openmp
+> ```
+
+> ***Edit, compile, and run the parallel version (multiple GPU workers)***
+> * To compile the program, type the following command in the terminal:
+> ```
+> nvcc -std=c++11 pi_approximation_parallel_gpu_cuda.cu -o pi_approximation_parallel_gpu_cuda -lsfml-graphics -lsfml-window -lsfml-system -lcurand
+> ```
+>
+> * To edit the program, type the following command in the terminal:
+> ```
+> gedit pi_approximation_parallel_gpu_cuda.cu
+> ```
+> 
+> * To run the program, type the following command in the terminal:
+> ```
+> ./pi_approximation_parallel_gpu_cuda
+> ```
+
+> **IMPORTANT**
+>
+> ##### &nbsp;&nbsp;&#8226; The source code and executable files are located on _./src_ folder. ⚠️
 
 ***
 
