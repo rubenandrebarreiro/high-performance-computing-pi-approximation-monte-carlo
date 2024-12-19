@@ -45,7 +45,7 @@
 
 > **IMPORTANT**
 >
-> ##### &nbsp;&nbsp;&#8226; This practical High-Performance Computing (HPC) demonstration was built for the practical laboratory classes of<br>&nbsp;&nbsp;&nbsp;&nbsp;the [Computer Systems Architectures](https://fenix.ciencias.ulisboa.pt/courses/asc-2254879305242433) (Fall Semester - 2024-2025 academic year), at [Ci&#234;ncias - ULisboa](https://ciencias.ulisboa.pt/) of [University of Lisbon](https://www.ulisboa.pt/),<br>&nbsp;&nbsp;&nbsp;&nbsp;between December 10, 2024, and December 20, 2024. ⚠️
+> ##### &nbsp;&nbsp;&#8226; This practical High-Performance Computing (HPC) demonstration was built<br>&nbsp;&nbsp;&nbsp;&nbsp;for the practical laboratory classes of the [Computer Systems Architectures](https://fenix.ciencias.ulisboa.pt/courses/asc-2254879305242433)<br>&nbsp;&nbsp;&nbsp;&nbsp;(Fall Semester - 2024-2025 academic year), at [Ci&#234;ncias - ULisboa](https://ciencias.ulisboa.pt/) of [University of Lisbon](https://www.ulisboa.pt/),<br>&nbsp;&nbsp;&nbsp;&nbsp;between December 10, 2024, and December 20, 2024. ⚠️
 
 ### What are Monte Carlo methods?
 
