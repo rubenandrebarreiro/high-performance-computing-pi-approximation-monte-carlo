@@ -8,7 +8,7 @@ find_package(CUDAToolkit REQUIRED)
 include_directories("${CUDA_INCLUDE_DIRS}")
 
 add_executable(Pi_Approximation__High_Performance_Computing_
-               pi_approximation_sequential_cpu.cpp
-               pi_approximation_parallel_cpu_openmp.cpp
-               pi_approximation_parallel_gpu_cuda.cu
+        src/pi_approximation_sequential_cpu.cpp
+        src/pi_approximation_parallel_cpu_openmp.cpp
+        src/pi_approximation_parallel_gpu_cuda.cu
 )
